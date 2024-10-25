@@ -1,0 +1,126 @@
+#compare {
+  margin-top: 100px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .search {
+      width: 100%;
+      position: relative;
+
+      i {
+        right: 0;
+        padding: 4px 30px;
+        margin: 10px;
+        border-left: 2px solid var(--1st-primary-color);
+        color: var(--1st-primary-color);
+      }
+
+      input {
+        width: 100%;
+        padding: 10px 30px;
+        border: none;
+        background: var(--background-color);
+      }
+    }
+
+    .table {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .single-table {
+        border: 1px solid var(--background-color);
+
+        &.tag {
+          width: calc(100% / 9);
+        }
+
+        &.main-product {
+          width: calc(100% / 4);
+        }
+
+        div {
+          border: 1px solid var(--background-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 200px;
+          }
+        }
+        .single-table-row-first {
+          height: 300px;
+        }
+        .single-table-row-second {
+          height: 75px;
+
+          span {
+            font-size: 13px;
+            text-align: center;
+            background-color: transparent;
+
+            i {
+              color: var(--1st-primary-color);
+            }
+          }
+
+          &:nth-child(3),
+          &:nth-child(5) {
+            background-color: #f1f3f46b;
+          }
+        }
+        .single-table-row-third {
+          height: 105px;
+          background-color: #f1f3f46b;
+
+          button {
+            outline: none;
+            border: none;
+            background: var(--1st-primary-color);
+            padding: 10px 20px;
+            color: white;
+            transition: all 0.3s;
+
+            &:hover {
+              background: var(--2nd-primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .search {
+    width: 90% !important;
+  }
+  .table {
+    flex-direction: column;
+
+    .tag {
+      display: none;
+    }
+
+    .main-product {
+      width: 90% !important;
+
+      .single-table-row-second {
+        height: 45px !important;
+      }
+      .single-table-row-third {
+        height: 75px !important;
+
+        button {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

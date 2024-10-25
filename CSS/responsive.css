@@ -1,0 +1,253 @@
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 0 calc((100% - 2 * 16px) / 2);
+  }
+  .banner {
+    height: 400px;
+  }
+
+  .banner-content h3 {
+    font-size: 28px;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+  }
+
+  .btn-outline {
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .d-sm-none {
+    display: none !important;
+  }
+
+  .width {
+    margin-top: 20px;
+    max-width: 537px !important;
+  }
+  .product-card {
+    flex: 1 0 100%;
+  }
+
+  .prev,
+  .next {
+    width: 24px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .banner {
+    height: 350px;
+  }
+
+  .banner-content h3 {
+    font-size: 24px;
+  }
+
+  .banner-content p {
+    font-size: 13px;
+  }
+
+  .btn-outline {
+    padding: 10px 20px;
+  }
+  .hover-div,
+  .specialOffer-div,
+  .lastestNews,
+  .hello,
+  .specialOffer-story,
+  .upperNav-p {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hello .border-right {
+    width: 80% !important;
+    margin: 10px;
+
+    div {
+      justify-content: flex-start !important;
+    }
+  }
+
+  .hello-flote {
+    cursor: pointer;
+    transition: all 0.15s;
+    border-right: 1px solid var(--a6aab7);
+    width: 80% !important;
+    margin: 10px;
+    &:hover {
+      border-right: 4px solid var(--1st-primary-color);
+    }
+    div {
+      justify-content: flex-start !important;
+    }
+  }
+  .footer {
+    .about {
+      flex-direction: column;
+      gap: 26px;
+      padding: 0px 0 40px 0px !important;
+    }
+    .menu {
+      flex-direction: column;
+      align-items: center;
+
+      .account,
+      .support,
+      .time,
+      .contact,
+      .sub {
+        width: 80%;
+        margin: 20px 0;
+      }
+    }
+  }
+  .copy-right {
+    flex-direction: column-reverse;
+  }
+  .about-subscribe {
+    width: 100% !important;
+    padding: 20px;
+  }
+
+  .swiper {
+    height: 1400px;
+  }
+  #aytorInstagram {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  table {
+    width: 200px;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      td {
+        &.first-td {
+          position: absolute;
+          left: 100px;
+        }
+
+        padding: 10px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-cart-div-cont {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .blog-cart-div {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .upper-contact {
+    flex-direction: column;
+
+    .upper-contact-div {
+      width: 90% !important;
+      margin: 10px;
+    }
+  }
+  .lower-contact {
+    flex-direction: column;
+
+    form {
+      width: 100%;
+    }
+
+    iframe {
+      min-width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .shop-all-details {
+    margin-top: 50px !important;
+  }
+
+  .quantity {
+    flex-direction: column;
+
+    .cart {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #two {
+    .container.d-flex {
+      display: flex;
+      flex-direction: column;
+
+      .two-left-down {
+        img {
+          &:nth-child(1) {
+            height: 60px !important;
+            width: 60px !important;
+          }
+          &:nth-child(2) {
+            height: 80px !important;
+            width: 80px !important;
+          }
+          &:nth-child(3) {
+            height: 100px !important;
+            width: 100px !important;
+          }
+          &:nth-child(4) {
+            height: 80px !important;
+            width: 80px !important;
+          }
+          &:nth-child(5) {
+            height: 60px !important;
+            width: 60px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 989px) {
+  #two {
+    .container.d-flex {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .black-red {
+    flex-direction: column;
+  }
+
+  #text {
+    margin-top: 0 !important;
+
+    span {
+      padding: 30px;
+    }
+  }
+}

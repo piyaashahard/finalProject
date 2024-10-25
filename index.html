@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------------------- Title ------------------>
+    <link rel="icon" type="image/png" href="Image/Logo(black).png" />
+    <title>Aytor</title>
+
+    <!-------------------------- CSS LINKS ------------------------------>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/home.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+
+    <!---------------------------------- SLICK.CSS ---------------------------------->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!---------------------------- FONTAWESOME --------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!----------------------------------- BOOTSTRAP --------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  </head>
+  <body>
+    <!---------------------------- NAVABR STARTS FROM HERE ------------------------->
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Image/Logo(black).png" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./HTML/aboutus.html"
+                >About Us</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <div class="menu">
+                <div class="item">
+                  <a href="#" class="link">
+                    <span> Shop
+                    <svg viewBox="0 0 360 360" xml:space="preserve">
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          id="XMLID_225_"
+                          d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-item">
+                      <a href="./HTML/shop-details.html" class="submenu-link"> Shop Details </a>
+                    </div>
+                    <div class="submenu-item">
+                      <a href="./HTML/shop-grid.html" class="submenu-link"> Shop Grid </a>
+                    </div>
+                    <div class="submenu-item">
+                      <a href="./HTML/shop-product-compare.html" class="submenu-link"> Shop compare </a>
+                    </div>
+                    <div class="submenu-item">
+                      <a href="./HTML/shop-watchlist.html" class="submenu-link"> Shop Watchlist </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./HTML/blog.html"
+                >Blogs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./HTML/contact.html"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <ul class="d-flex">
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-heart"></i></a>
+            </li>
+            <li>
+              <a href="#" class="position-relative"
+                ><i class="fa-solid fa-bag-shopping"></i>
+                <span class="count">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!---------------------------- NAVABR ENDS HERE ------------------------->
+
+    <!------------------------------------- SMALL NAVBAR STARTS FROM HERE ------------------------------>
+    <nav class="d-lg-none smallNav">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-2 text-center">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+
+          <div class="col-8 text-center px-0 logo">
+            <a href="home.html"><img src="Image/Logo(1).png" alt="" /></a>
+          </div>
+          
+          <div class="col-2 px-0">
+            <div class="links">
+              <ul class="dmy-flex align-items-center d-sm-none">
+                <li>
+                  <a href="#" class="m-0 me-3"
+                    ><img src="Image/heart icon.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="position-relative m-0"
+                    ><img src="Image/bag icon.svg" alt="" />
+                    <span class="count">0</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="mySidenav" class="sidenav" style="z-index: 10;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./HTML/home.html">Home</a>
+        <a href="./HTML/aboutus.html">About Us</a>
+        <span href="#" class="d-flex justify-content-between small-shop">
+          Shop 
+          <div>
+            <a href="./HTML/shop-details.html">Shop Details</a>
+            <a href="./HTML/shop-grid.html">Shop Grid</a>
+            <a href="./HTML/shop-product-compare.html">Shop Compare</a>
+            <a href="./HTML/shop-watchlist.html">Shop Watchlist</a>
+          </div>
+        </span>
+        <a href="./HTML/blog.html">Blogs</a>
+        <a href="./HTML/contact.html">Contact us</a>
+      </div>
+
+    </nav>
+    <!------------------------------------- SMALL NAVBAR STARTS FROM HERE ------------------------------>
+
+    <!------------------------------------------ BOTTOM NAVBAR STARTS FROM HERE ---------------------------------------------->
+    <div class="bottomNav d-lg-none">
+      <div class="container">
+        <div class="row">
+          <ul class="d-flex justify-content-between">
+            <div class="d-flex">
+              <li>
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+              </li>
+            </div>
+
+            <div class="d-flex">
+              <li>
+                <a href="#"><img src="Image/heart icon.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="Image/bag icon.svg" alt="" /></a>
+              </li>
+            </div>
+          </ul>
+          <a href="#" class="searchIcon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------ BOTTOM NAVBAR ENDS HERE ---------------------------------------------->
+
+    <!-----------------------------------------SLIDER STARTS FROM here------------------------------------------>
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img src="Image/Image Here.png" alt="" />
+        </div>
+        <div class="item">
+          <img
+            src="https://fps.cdnpk.net/images/home/subhome-ai.webp?w=649&h=649"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/866759932dc5358cee86f6552d1250f2/inside-bubble-spheres.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="buttons d-none">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="slider-lekha">
+        <p>Mega sale</p>
+        <h1>Up To 35% Off</h1>
+        <p>
+          Objectively incubate enabled innovation through leveraged mindshare.
+          Competently.
+        </p>
+        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <!-----------------------------------------SLIDER ENDS here------------------------------------------>
+
+    <!------------------------------------- IMAGE HOVER STARTS FROM HERE ---------------------------------------->
+    <div id="hover" class="container">
+      <div
+        class="hover-div d-flex flex-sm-column flex-lg-row align-items-center justify-content-center"
+      >
+        <div>
+          <div class="m-3 left-up d-flex align-items-center">
+            /
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <h1>Beauty cream</h1>
+              <p>Learn more <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+          <div class="m-3 left-down d-flex align-items-center">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <h1>Beauty cream</h1>
+              <p>Learn more <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="right d-flex align-items-center">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <h1>Beauty cream</h1>
+            <p>Learn more <i class="fa-solid fa-arrow-right"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------- IMAGE HOVER ENDS FROM HERE ---------------------------------------->
+
+    <!----------------------------------------------------------- ARRIVALS STARTS FROM HERE --------------------------------------------------------------->
+    <!----------------------------------------------------------- ARRIVALS STARTS FROM HERE --------------------------------------------------------- -->
+
+    <!--------------------------------------------BANNAR STARTS FROM here------------------------------------------>
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-5 banner-content">
+            <h3>
+              Get Up To 35% Off all <br />
+              Best Spa Cosmetics <br />
+              Cream
+            </h3>
+            <p>
+              Holisticly maximize interoperable action items for effective
+              <br />
+              e-business. Globally impact enterprise-wide niche markets
+              <br />through dynamic.
+            </p>
+            <a href="#" class="btn-outline">
+              Shop Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------------BANNAR ENDS here------------------------------------------>
+
+    <!---------------------------------------------- BEST SELLER STARTS FROM HERE ----------------------------------------->
+    <section id="best-seller" class="py-5">
+      <div class="container d-flex flex-column align-items-center">
+        <h2 class="text-center mb-4">Best Seller Products</h2>
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-12 col-md-6 col-lg-3 BSCart">
+            <div class="product-card position-relative">
+              <span class="discount-tag position-absolute top-0 start-0"
+                >-20%</span
+              >
+              <img
+                src="Image/Mask here(1).png"
+                alt="Product 1"
+                class="img-fluid"
+              />
+              <div class="product-info text-center p-3">
+                <p>$120.99</p>
+                <h3>Product Name 1</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="hover-icons">
+                  <i
+                    class="fas fa-cart-plus"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Cart"
+                    data-bs-original-title="Add to Cart"
+                  ></i>
+                  <i
+                    class="fas fa-heart"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Wishlist"
+                    data-bs-original-title="Add to Wishlist"
+                  ></i>
+                  <i
+                    class="fa-regular fa-eye"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="View Details"
+                    data-bs-original-title="View Details"
+                  ></i>
+                  <i
+                    class="fa-regular fa-comment-dots"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Reviews"
+                    data-bs-original-title="Reviews"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-12 col-md-6 col-lg-3 BSCart">
+            <div class="product-card position-relative">
+              <span class="discount-tag position-absolute top-0 start-0"
+                >-15%</span
+              >
+              <img
+                src="Image/Mask here(2).png"
+                alt="Product 2"
+                class="img-fluid"
+              />
+              <div class="product-info text-center p-3">
+                <p>$110.50</p>
+                <h3>Product Name 2</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="hover-icons">
+                  <i
+                    class="fas fa-cart-plus"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Cart"
+                    data-bs-original-title="Add to Cart"
+                  ></i>
+                  <i
+                    class="fas fa-heart"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Wishlist"
+                    data-bs-original-title="Add to Wishlist"
+                  ></i>
+                  <i
+                    class="fa-regular fa-eye"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="View Details"
+                    data-bs-original-title="View Details"
+                  ></i>
+                  <i
+                    class="fa-regular fa-comment-dots"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Reviews"
+                    data-bs-original-title="Reviews"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-12 col-md-6 col-lg-3 BSCart">
+            <div class="product-card position-relative">
+              <span class="discount-tag position-absolute top-0 start-0"
+                >NEW</span
+              >
+              <img
+                src="Image/Mask here(3).png"
+                alt="Product 3"
+                class="img-fluid"
+              />
+              <div class="product-info text-center p-3">
+                <p>$90.99</p>
+                <h3>Product Name 3</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="hover-icons">
+                  <i
+                    class="fas fa-cart-plus"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Cart"
+                    data-bs-original-title="Add to Cart"
+                  ></i>
+                  <i
+                    class="fas fa-heart"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Wishlist"
+                    data-bs-original-title="Add to Wishlist"
+                  ></i>
+                  <i
+                    class="fa-regular fa-eye"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="View Details"
+                    data-bs-original-title="View Details"
+                  ></i>
+                  <i
+                    class="fa-regular fa-comment-dots"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Reviews"
+                    data-bs-original-title="Reviews"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-12 col-md-6 col-lg-3 BSCart">
+            <div class="product-card position-relative">
+              <span class="discount-tag position-absolute top-0 start-0"
+                >NEW</span
+              >
+              <img
+                src="Image/Mask here.png"
+                alt="Product 4"
+                class="img-fluid"
+              />
+              <div class="product-info text-center p-3">
+                <p>$135.00</p>
+                <h3>Product Name 4</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="hover-icons">
+                  <i
+                    class="fas fa-cart-plus"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Cart"
+                    data-bs-original-title="Add to Cart"
+                  ></i>
+                  <i
+                    class="fas fa-heart"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Wishlist"
+                    data-bs-original-title="Add to Wishlist"
+                  ></i>
+                  <i
+                    class="fa-regular fa-eye"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="View Details"
+                    data-bs-original-title="View Details"
+                  ></i>
+                  <i
+                    class="fa-regular fa-comment-dots"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Reviews"
+                    data-bs-original-title="Reviews"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <!-- Product 5 -->
+          <div class="col-12 col-md-6 col-lg-3 BSCart">
+            <div class="product-card position-relative">
+              <span class="discount-tag position-absolute top-0 start-0"
+                >-30%</span
+              >
+              <img
+                src="Image/Mask here(5).png"
+                alt="Product 5"
+                class="img-fluid"
+              />
+              <div class="product-info text-center p-3">
+                <p>$90.50</p>
+                <h3>Product Name 5</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="hover-icons">
+                  <i
+                    class="fas fa-cart-plus"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Cart"
+                    data-bs-original-title="Add to Cart"
+                  ></i>
+                  <i
+                    class="fas fa-heart"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Wishlist"
+                    data-bs-original-title="Add to Wishlist"
+                  ></i>
+                  <i
+                    class="fa-regular fa-eye"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="View Details"
+                    data-bs-original-title="View Details"
+                  ></i>
+                  <i
+                    class="fa-regular fa-comment-dots"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Reviews"
+                    data-bs-original-title="Reviews"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="col-12 col-md-6 col-lg-3 BSCart">
+            <div class="product-card position-relative">
+              <span class="discount-tag position-absolute top-0 start-0"
+                >-12%</span
+              >
+              <img
+                src="Image/Mask here.png"
+                alt="Product 6"
+                class="img-fluid"
+              />
+              <div class="product-info text-center p-3">
+                <p>$140.75</p>
+                <h3>Product Name 6</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="hover-icons">
+                  <i
+                    class="fas fa-cart-plus"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Cart"
+                    data-bs-original-title="Add to Cart"
+                  ></i>
+                  <i
+                    class="fas fa-heart"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Wishlist"
+                    data-bs-original-title="Add to Wishlist"
+                  ></i>
+                  <i
+                    class="fa-regular fa-eye"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="View Details"
+                    data-bs-original-title="View Details"
+                  ></i>
+                  <i
+                    class="fa-regular fa-comment-dots"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Reviews"
+                    data-bs-original-title="Reviews"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="col-12 col-md-6 col-lg-3 BSCart">
+            <div class="product-card position-relative">
+              <span class="discount-tag position-absolute top-0 start-0"
+                >NEW</span
+              >
+              <img
+                src="Image/Mask here(7).png"
+                alt="Product 7"
+                class="img-fluid"
+              />
+              <div class="product-info text-center p-3">
+                <p>$105.20</p>
+                <h3>Product Name 7</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="hover-icons">
+                  <i
+                    class="fas fa-cart-plus"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Cart"
+                    data-bs-original-title="Add to Cart"
+                  ></i>
+                  <i
+                    class="fas fa-heart"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Wishlist"
+                    data-bs-original-title="Add to Wishlist"
+                  ></i>
+                  <i
+                    class="fa-regular fa-eye"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="View Details"
+                    data-bs-original-title="View Details"
+                  ></i>
+                  <i
+                    class="fa-regular fa-comment-dots"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Reviews"
+                    data-bs-original-title="Reviews"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="col-12 col-md-6 col-lg-3 BSCart">
+            <div class="product-card position-relative">
+              <span class="discount-tag position-absolute top-0 start-0"
+                >NEW</span
+              >
+              <img
+                src="Image/Mask here(1).png"
+                alt="Product 8"
+                class="img-fluid"
+              />
+              <div class="product-info text-center p-3">
+                <p>$115.30</p>
+                <h3>Product Name 8</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="hover-icons">
+                  <i
+                    class="fas fa-cart-plus"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Cart"
+                    data-bs-original-title="Add to Cart"
+                  ></i>
+                  <i
+                    class="fas fa-heart"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Add to Wishlist"
+                    data-bs-original-title="Add to Wishlist"
+                  ></i>
+                  <i
+                    class="fa-regular fa-eye"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="View Details"
+                    data-bs-original-title="View Details"
+                  ></i>
+                  <i
+                    class="fa-regular fa-comment-dots"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    aria-label="Reviews"
+                    data-bs-original-title="Reviews"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p
+          style="
+            background-color: var(--1st-primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 58px;
+            width: 190px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+          "
+        >
+          See All Products <i class="fa-solid fa-arrow-right ms-2"></i>
+        </p>
+      </div>
+    </section>
+    <!---------------------------------------------- BEST SELLER ENDS HERE ----------------------------------------->
+
+    <!--------------------------------- DEALS UNIQUE SECTIONS STRTS HERE------------------------------------>
+
+    <!-- <section id="deals-section-unique" class="deals-section-custom py-5">
+      <div class="container position-relative">
+        <h2 class="text-center mb-4">Deals Of The Day</h2>
+
+        <div id="countdown-custom" class="countdown-timer-custom mt-4">
+          <div class="text-center">
+            <span id="days-custom" class="time-number">27</span>
+            <span class="time-label">Days</span>
+          </div>
+          <div class="text-center">
+            <span id="hours-custom" class="time-number">4</span>
+            <span class="time-label">Hours</span>
+          </div>
+          <div class="text-center">
+            <span id="minutes-custom" class="time-number">31</span>
+            <span class="time-label">Minutes</span>
+          </div>
+          <div class="text-center">
+            <span id="seconds-custom" class="time-number">30</span>
+            <span class="time-label">Sec</span>
+          </div>
+        </div>
+
+        <div id="slider-custom" class="slider-container-custom mt-6">
+          <div class="slider-custom">
+            <div class="slider2">
+              <div class="list2">
+                <div class="item2">
+                  <div class="custom-slide d-flex">
+                    <div class="custom-card col-6">
+                      <div class="card-content-custom">
+                        <p><strong>Fairness Cream</strong></p>
+                        <h3>Get Up To 35% Off</h3>
+                        <p>
+                          Completely synergize resource taxing relationships via
+                          premier niche markets.
+                        </p>
+                        <p>
+                          <strong>$256.35</strong>
+                          <span class="old-price">$356.35</span>
+                        </p>
+                        <button class="btn-deal">
+                          Shop Now <i class="fas fa-arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="custom-card col-6">
+                      <img
+                        src="Image/Image.png"
+                        alt="Deal 2"
+                        class="img-fluid"
+                      />
+                      <div class="card-content-custom">
+                        <p><strong>Body Lotion</strong></p>
+                        <h3>Get Up To 35% Off</h3>
+                        <p>
+                          Credibly innovate granular internal or organic sources
+                          for sustainable synergy.
+                        </p>
+                        <p>
+                          <strong>$256.35</strong>
+                          <span class="old-price">$356.35</span>
+                        </p>
+                        <button class="btn-deal">
+                          Shop Now <i class="fas fa-arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item2">
+                  <img
+                    src="https://fps.cdnpk.net/images/home/subhome-ai.webp?w=649&h=649"
+                    alt=""
+                  />
+                </div>
+                <div class="item2">
+                  <img
+                    src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/866759932dc5358cee86f6552d1250f2/inside-bubble-spheres.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="buttons2 d-none">
+                <button id="prev2"><</button>
+                <button id="next2">></button>
+              </div>
+
+              <ul class="dots2">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+              </ul>
+
+               <div class="slider-lekha">
+        <p>Mega sale</p>
+        <h1>Up To 35% Off</h1>
+        <p>
+          Objectively incubate enabled innovation through leveraged mindshare.
+          Competently.
+        </p>
+        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+      </div> 
+            </div>
+          </div>
+        </div>
+
+        <div class="dotsDeals">
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--------------------------------- DEALS UNIQUE SECTIONS ENDS HERE------------------------------------>
+
+    <!----------------------------------SPECIAL OFFER STARTS FROM HERE------------------------------------>
+    <section id="specialOffer">
+      <div class="specialOffer-div d-flex flex-lg-row flex-sm-column">
+        <div
+          class="specialOffer col-lg-6 d-flex align-items-start justify-content-center flex-column overflow-hidden"
+        >
+          <p class="text-uppercase">special Offer</p>
+          <h1>
+            Beauty Inspired by Real <br />
+            Shine In Life
+          </h1>
+          <p>
+            Completely grow maintainable niches via tactical <br />
+            services. Progressively synthesize market positioning paradigms for
+            <br />
+            functional architectures. Professionally aggregate.
+          </p>
+          <button class="d-flex align-items-center justify-content-center">
+            Explore more <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div
+          class="video col-lg-6 position-relative d-flex align-items-center justify-content-center overflow-hidden"
+        >
+          <div class="icon position-absolute">
+            <a href="https://www.youtube.com/watch?v=6FURuLYrR_Q"
+              ><i class="fa-solid fa-circle-play"></i
+            ></a>
+          </div>
+          <div class="img"><img src="Image/hi.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------SPECIAL OFFER ENDS HERE------------------------------------>
+
+    <!-----------------------------LATEST NEWS STARTS FROM HERE------------------------------------>
+    <section id="lastestNews">
+      <div class="container">
+        <h2 class="text-center">Lastest News</h2>
+        <div class="d-flex lastestNews">
+          <div class="lastestNews-div">
+            <img
+              src="https://c4.wallpaperflare.com/wallpaper/297/22/531/lake-blue-moonlight-moon-wallpaper-preview.jpg"
+              alt=""
+            />
+            <p>Best multi-step Beauty skin.</p>
+            <span
+              >Appropriately seize 24/365 markets <br />
+              without adaptive.</span
+            >
+            <div class="d-flex justify-content-between">
+              <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+              <div class="date">Jan 04, 2022</div>
+            </div>
+          </div>
+
+          <div class="lastestNews-div">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/032/242/170/non_2x/beautiful-waterfall-flowers-water-nature-waterfall-hd-wallpaper-ai-generated-free-photo.jpg"
+              alt=""
+            />
+            <p>Best multi-step Beauty skin.</p>
+            <span
+              >Appropriately seize 24/365 markets <br />
+              without adaptive.</span
+            >
+            <div class="d-flex justify-content-between">
+              <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+              <div class="date">Jan 04, 2022</div>
+            </div>
+          </div>
+
+          <div class="lastestNews-div">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpLzMewm9M3ac5D7CwpyDkmTiVzt-m282t1A&s"
+              alt=""
+            />
+            <p>Best multi-step Beauty skin.</p>
+            <span
+              >Appropriately seize 24/365 markets <br />
+              without adaptive.</span
+            >
+            <div class="d-flex justify-content-between">
+              <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+              <div class="date">Jan 04, 2022</div>
+            </div>
+          </div>
+
+          <div class="lastestNews-div">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/032/257/185/non_2x/wallpapers-for-the-beautiful-peacock-wallpaper-ai-generated-free-photo.jpg"
+              alt=""
+            />
+            <p>Best multi-step Beauty skin.</p>
+            <span
+              >Appropriately seize 24/365 markets <br />
+              without adaptive.</span
+            >
+            <div class="d-flex justify-content-between">
+              <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+              <div class="date">Jan 04, 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------LATEST NEWS ENDS HERE------------------------------------>
+
+    <!-- FOOTER STARTS FROM HERE -->
+    <footer>
+      <div class="container bg-light folting-div">
+        <div class="d-flex hello">
+          <div class="col-3 border-right">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div>
+                <p>FREE SHIPING</p>
+                <span
+                  >all orders over
+                  <span style="margin-left: 0; color: var(--1st-primary-color)"
+                    >$150</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 border-right">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-money-bill"></i>
+              <div>
+                <p>QUICK PAYMENT</p>
+                <span>100% secure payment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 border-right">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-money-bill-trend-up"></i>
+              <div>
+                <p>FREE RETURNS</p>
+                <span style="font-size: 13px">Return $ within 30 days</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 hello-flote">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-id-card-clip"></i>
+              <div>
+                <p>24/7 SUPPORT</p>
+                <span>Quick support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="footer">
+          <div class="about d-flex align-items-center justify-content-center">
+            <div class="icons d-flex col-4 justify-content-center">
+              <i class="fa-brands fa-facebook-f"></i
+              ><i class="fa-brands fa-twitter"></i
+              ><i class="fa-brands fa-instagram"></i
+              ><i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <div class="col-4 d-flex align-items-center justify-content-center">
+              <a href="https://www.creativeitinstitute.com/">
+                <img src="Image/Logo(3).png" alt="" />
+              </a>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+              <img
+                src="Image/25654-2-major-credit-card-logo-transparent-thumb 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="menu d-flex justify-content-center">
+            <div class="col-2 account">
+              <h3>My Account</h3>
+              <ul>
+                <li><i class="fa-solid fa-chevron-right"></i>My account</li>
+                <li><i class="fa-solid fa-chevron-right"></i>View Cart</li>
+                <li><i class="fa-solid fa-chevron-right"></i>Wishlist</li>
+                <li><i class="fa-solid fa-chevron-right"></i>Compare</li>
+                <li><i class="fa-solid fa-chevron-right"></i>New Products</li>
+              </ul>
+            </div>
+
+            <div class="col-2 support">
+              <h3>Support</h3>
+              <ul>
+                <li><i class="fa-solid fa-chevron-right"></i>Help</li>
+                <li><i class="fa-solid fa-chevron-right"></i>Conatct us</li>
+                <li><i class="fa-solid fa-chevron-right"></i>Feedback</li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Customer Service
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Store Locations
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-2 time">
+              <h3>Opening Time</h3>
+              <div class="d-flex mt-4">
+                <div class="col-6">
+                  Mon - Tue: <br />Wed: <br />Fri: <br />Sat: <br />Sun:
+                </div>
+                <div class="col-6">
+                  8AM - 10PM <br />
+                  8AM - 7PM <br />7AM - 12PM <br />9AM - 8PM <br />
+                  Closed
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3 contact">
+              <h3>Contact Us</h3>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>
+                    830 Broad way, New York, NY 10003, <br />
+                    United States
+                  </p>
+                </li>
+
+                <li><i class="fa-solid fa-phone"></i> +18008660286</li>
+
+                <li class="d-flex align-items-center">
+                  <i class="fa-solid fa-mail-forward"></i>
+                  <p>aetor.info@gmail.com <br />info@aetor.com</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-3 sub">
+              <h3>News Letter</h3>
+
+              <p class="mt-4">
+                Authoritatively morph 24/7 potentialities <br />
+                with error-free partnerships.
+              </p>
+
+              <div class="d-flex mt-4">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email address"
+                />
+                <button>Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight">
+        © 2022 All Rights Reserved
+        <a
+          class="red"
+          style="text-decoration: none"
+          href="https://www.creativeitinstitute.com/"
+          >Aytor</a
+        >
+        By
+        <span class="red">Bangladesh</span>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS HERE -->
+
+    <!---------------------------------------- JAVASCRIPT CODE STARTS FROM HERE ------------------------------->
+    <script src="JAVASCRIPT/script.js"></script>
+    <!---------------------------------------- JAVASCRIPT CODE ENDS HERE ------------------------------->
+
+    <!------------------------------------------- BOOTSTRAP.js starts from here------------------------------------------ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <!------------------------------------------- BOOTSTRAP.js ends here------------------------------------------ -->
+
+    <!-------------------------------------------------- JQUARY --------------------------------------------------->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!--------------------------------------- SLICK.JS ----------------------------------------->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+
+    <script>
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

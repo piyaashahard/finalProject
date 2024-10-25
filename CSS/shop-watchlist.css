@@ -1,0 +1,53 @@
+#wishlist {
+  margin-top: 100px;
+
+  table {
+    width: 100%;
+
+    thead {
+      background-color: #c8ced45c;
+      border-bottom: 2px solid var(--1st-primary-color);
+
+      th {
+        padding-left: 70px !important;
+        padding: 10px;
+        font-weight: bolder;
+      }
+    }
+
+    tbody {
+      td {
+        padding: 15px;
+        padding-left: 35px;
+        border: 2px solid var(--background-color);
+
+        .cross {
+          width: 20px;
+          height: 20px;
+        }
+
+        span {
+          margin-left: 25px;
+        }
+
+        button {
+          outline: none;
+          border: none;
+          background: var(--1st-primary-color);
+          padding: 10px 20px;
+          color: white;
+          transition: all 0.3s;
+
+          &:hover {
+            background: var(--2nd-primary-color);
+          }
+        }
+
+        img {
+          width: 100px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
